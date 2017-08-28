@@ -1764,7 +1764,7 @@
             "overlayOpacity": 0.5
           },
           "title": "THANKS <br>FOR SCANNING <br>MY CARD",
-          "text": "Follow the links below to call me, get my info in you cell, or view my site<br><br>",
+          "text": "Follow the links below to call me, get my info in your cell, or view my site<br><br>",
           "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"index.html\" data-toolbar=\"-mbrBtnMove\"><span class=\"mbri-browse mbr-iconfont mbr-iconfont-btn\"></span>MY SITE</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"STM-VCard.vcf\" data-toolbar=\"-mbrBtnMove\"><span class=\"mbri-share mbr-iconfont mbr-iconfont-btn\"></span>MY VCARD</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"tel:1-210-363-4292\" data-toolbar=\"-mbrBtnMove\"><span class=\"mbri-mobile mbr-iconfont mbr-iconfont-btn\"></span>CALL ME</a>    ",
           "_tags": [
             "Theme"
