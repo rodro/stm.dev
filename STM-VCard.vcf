@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//Mac OS X 10.12.1//EN
+N:Rodriguez;Gonzalo;;;
+FN:Seize the Moment - Photography & Media
+ORG:Seize the Moment - Photography & Media;
+TEL;type=IPHONE;type=CELL;type=VOICE;type=pref:(210) 363-4292
+item1.URL;type=pref:www.stm.pm
+item1.X-ABLabel:_$!<HomePage>!$_
+X-ABShowAs:COMPANY
+X-ABUID:3C63658E-DA72-44D4-9DA4-E05E0E8F6184:ABPerson
+END:VCARD
