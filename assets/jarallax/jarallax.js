@@ -1,9 +1,9 @@
-*
-Name    : Just Another Parallax [Jarallax]
-Version : 1.7.1
-Author  : _nK https://nkdev.info
-GitHub  : https://github.com/nk-o/jarallax
-*/
+// *
+// Name    : Just Another Parallax [Jarallax]
+// Version : 1.7.1
+// Author  : _nK https://nkdev.info
+// GitHub  : https://github.com/nk-o/jarallax
+// */
 (function(d){function u(){v=d.innerWidth||document.documentElement.clientWidth;g=d.innerHeight||document.documentElement.clientHeight}function m(b,a,c){b.addEventListener?b.addEventListener(a,c):b.attachEvent("on"+a,function(){c.call(b)})}function n(b){d.requestAnimationFrame(function(){"scroll"!==b.type&&u();for(var a=0,c=k.length;a<c;a++)"scroll"!==b.type&&(k[a].coverImage(),k[a].clipContainer()),k[a].onScroll()})}Date.now||(Date.now=function(){return(new Date).getTime()});d.requestAnimationFrame||
 function(){for(var b=["webkit","moz"],a=0;a<b.length&&!d.requestAnimationFrame;++a){var c=b[a];d.requestAnimationFrame=d[c+"RequestAnimationFrame"];d.cancelAnimationFrame=d[c+"CancelAnimationFrame"]||d[c+"CancelRequestAnimationFrame"]}if(/iP(ad|hone|od).*OS 6/.test(d.navigator.userAgent)||!d.requestAnimationFrame||!d.cancelAnimationFrame){var e=0;d.requestAnimationFrame=function(a){var b=Date.now(),c=Math.max(e+16,b);return setTimeout(function(){a(e=c)},c-b)};d.cancelAnimationFrame=clearTimeout}}();
 var q=function(){if(!d.getComputedStyle)return!1;var b=document.createElement("p"),a={webkitTransform:"-webkit-transform",OTransform:"-o-transform",msTransform:"-ms-transform",MozTransform:"-moz-transform",transform:"transform"};(document.body||document.documentElement).insertBefore(b,null);for(var c in a)if("undefined"!==typeof b.style[c]){b.style[c]="translate3d(1px,1px,1px)";var e=d.getComputedStyle(b).getPropertyValue(a[c])}(document.body||document.documentElement).removeChild(b);return"undefined"!==
