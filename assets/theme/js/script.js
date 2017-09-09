@@ -1,14 +1,486 @@
-(function(){function C(){if(!D&&document.body){D=!0;var a=document.body,b=document.documentElement,d=window.innerHeight,c=a.scrollHeight;l=0<=document.compatMode.indexOf("CSS")?b:a;m=a;f.keyboardSupport&&window.addEventListener("keydown",J,!1);if(top!=self)u=!0;else if(Y&&c>d&&(a.offsetHeight<=d||b.offsetHeight<=d)){var e=document.createElement("div");e.style.cssText="position:absolute; z-index:-10000; top:0; left:0; right:0; height:"+l.scrollHeight+"px";document.body.appendChild(e);var g;v=function(){g||
-    (g=setTimeout(function(){e.style.height="0";e.style.height=l.scrollHeight+"px";g=null},500))};setTimeout(v,10);window.addEventListener("resize",v,!1);A=new Z(v);A.observe(a,{attributes:!0,childList:!0,characterData:!1});l.offsetHeight<=d&&(d=document.createElement("div"),d.style.clear="both",a.appendChild(d))}f.fixedBackground||(a.style.backgroundAttachment="scroll",b.style.backgroundAttachment="scroll")}}function K(a,b,d){aa(b,d);if(1!=f.accelerationMax){var c=Date.now()-E;c<f.accelerationDelta&&
-    (c=(1+50/c)/2,1<c&&(c=Math.min(c,f.accelerationMax),b*=c,d*=c));E=Date.now()}t.push({x:b,y:d,lastX:0>b?.99:-.99,lastY:0>d?.99:-.99,start:Date.now()});if(!F){var e=a===document.body,g=function(c){c=Date.now();for(var k=0,l=0,h=0;h<t.length;h++){var n=t[h],p=c-n.start,m=p>=f.animationTime,q=m?1:p/f.animationTime;f.pulseAlgorithm&&(p=q,1<=p?q=1:0>=p?q=0:(1==f.pulseNormalize&&(f.pulseNormalize/=L(1)),q=L(p)));p=n.x*q-n.lastX>>0;q=n.y*q-n.lastY>>0;k+=p;l+=q;n.lastX+=p;n.lastY+=q;m&&(t.splice(h,1),h--)}e?
-    window.scrollBy(k,l):(k&&(a.scrollLeft+=k),l&&(a.scrollTop+=l));b||d||(t=[]);t.length?M(g,a,1E3/f.frameRate+1):F=!1};M(g,a,0);F=!0}}function N(a){D||C();var b=a.target;if(a.defaultPrevented||a.ctrlKey||r(m,"embed")||r(b,"embed")&&/\.pdf/i.test(b.src)||r(m,"object")||b.shadowRoot)return!0;var d=-a.wheelDeltaX||a.deltaX||0,c=-a.wheelDeltaY||a.deltaY||0;ba&&(a.wheelDeltaX&&w(a.wheelDeltaX,120)&&(d=a.wheelDeltaX/Math.abs(a.wheelDeltaX)*-120),a.wheelDeltaY&&w(a.wheelDeltaY,120)&&(c=a.wheelDeltaY/Math.abs(a.wheelDeltaY)*
-    -120));d||c||(c=-a.wheelDelta||0);1===a.deltaMode&&(d*=40,c*=40);b=O(b);if(!b)return u&&G?(Object.defineProperty(a,"target",{value:window.frameElement}),parent.wheel(a)):!0;if(!f.touchpadSupport&&ca(c))return!0;1.2<Math.abs(d)&&(d*=f.stepSize/120);1.2<Math.abs(c)&&(c*=f.stepSize/120);K(b,d,c);a.preventDefault();P()}function J(a){var b=a.target,d=a.ctrlKey||a.altKey||a.metaKey||a.shiftKey&&a.keyCode!==g.spacebar;document.body.contains(m)||(m=document.activeElement);var c=/^(textarea|select|embed|object)$/i,
-    e=/^(button|submit|radio|checkbox|file|color|image)$/i;if(!(c=a.defaultPrevented||c.test(b.nodeName)||r(b,"input")&&!e.test(b.type)||r(m,"video"))){c=a.target;var h=!1;if(-1!=document.URL.indexOf("www.youtube.com/watch")){do if(h=c.classList&&c.classList.contains("html5-video-controls"))break;while(c=c.parentNode)}c=h}if(c||b.isContentEditable||d||(r(b,"button")||r(b,"input")&&e.test(b.type))&&a.keyCode===g.spacebar||r(b,"input")&&"radio"==b.type&&da[a.keyCode])return!0;c=b=0;d=O(m);if(!d)return u&&
-    G?parent.keydown(a):!0;e=d.clientHeight;d==document.body&&(e=window.innerHeight);switch(a.keyCode){case g.up:c=-f.arrowScroll;break;case g.down:c=f.arrowScroll;break;case g.spacebar:c=a.shiftKey?1:-1;c=-c*e*.9;break;case g.pageup:c=.9*-e;break;case g.pagedown:c=.9*e;break;case g.home:c=-d.scrollTop;break;case g.end:e=d.scrollHeight-d.scrollTop-e;c=0<e?e+10:0;break;case g.left:b=-f.arrowScroll;break;case g.right:b=f.arrowScroll;break;default:return!0}K(d,b,c);a.preventDefault();P()}function Q(a){m=
-    a.target}function P(){clearTimeout(R);R=setInterval(function(){H={}},1E3)}function I(a,b){for(var d=a.length;d--;)H[S(a[d])]=b;return b}function O(a){var b=[],d=document.body,c=l.scrollHeight;do{var e=H[S(a)];if(e)return I(b,e);b.push(a);if(c===a.scrollHeight){if(e=T(l)&&T(d)||U(l),u&&l.clientHeight+10<l.scrollHeight||!u&&e)return I(b,ea())}else if(a.clientHeight+10<a.scrollHeight&&U(a))return I(b,a)}while(a=a.parentElement)}function T(a){return"hidden"!==getComputedStyle(a,"").getPropertyValue("overflow-y")}
-    function U(a){a=getComputedStyle(a,"").getPropertyValue("overflow-y");return"scroll"===a||"auto"===a}function r(a,b){return(a.nodeName||"").toLowerCase()===b.toLowerCase()}function aa(a,b){a=0<a?1:-1;b=0<b?1:-1;if(B.x!==a||B.y!==b)B.x=a,B.y=b,t=[],E=0}function ca(a){if(a)return h.length||(h=[a,a,a]),a=Math.abs(a),h.push(a),h.shift(),clearTimeout(V),V=setTimeout(function(){try{localStorage.SS_deltaBuffer=h.join(",")}catch(b){}},1E3),!W(120)&&!W(100)}function w(a,b){return Math.floor(a/b)==a/b}function W(a){return w(h[0],
-    a)&&w(h[1],a)&&w(h[2],a)}function L(a){a*=f.pulseScale;if(1>a)var b=a-(1-Math.exp(-a));else b=Math.exp(-1),a=1-Math.exp(-(a-1)),b+=a*(1-b);return b*f.pulseNormalize}function x(a){for(var b in a)X.hasOwnProperty(b)&&(f[b]=a[b])}var X={frameRate:150,animationTime:400,stepSize:100,pulseAlgorithm:!0,pulseScale:4,pulseNormalize:1,accelerationDelta:50,accelerationMax:3,keyboardSupport:!0,arrowScroll:50,touchpadSupport:!1,fixedBackground:!0,excluded:""},f=X,u=!1,B={x:0,y:0},D=!1,l=document.documentElement,
-    m,A,v,h=[],ba=/^Mac/.test(navigator.platform),g={left:37,up:38,right:39,down:40,spacebar:32,pageup:33,pagedown:34,end:35,home:36},da={37:1,38:1,39:1,40:1},t=[],F=!1,E=Date.now(),S=function(){var a=0;return function(b){return b.uniqueID||(b.uniqueID=a++)}}(),H={},R,V;if(window.localStorage&&localStorage.SS_deltaBuffer)try{h=localStorage.SS_deltaBuffer.split(",")}catch(a){}var M=function(){return window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||function(a,
-    b,d){window.setTimeout(a,d||1E3/60)}}(),Z=window.MutationObserver||window.WebKitMutationObserver||window.MozMutationObserver,ea=function(){var a;return function(){if(!a){var b=document.createElement("div");b.style.cssText="height:10000px;width:1px;";document.body.appendChild(b);var d=document.body.scrollTop;window.scrollBy(0,3);a=document.body.scrollTop!=d?document.body:document.documentElement;window.scrollBy(0,-3);document.body.removeChild(b)}return a}}(),k=window.navigator.userAgent,y=/Edge/.test(k),
-    G=/chrome/i.test(k)&&!y;y=/safari/i.test(k)&&!y;var fa=/mobile/i.test(k),ha=/Windows NT 6.1/i.test(k)&&/rv:11/i.test(k),Y=y&&(/Version\/8/i.test(k)||/Version\/9/i.test(k));k=(G||y||ha)&&!fa;var z;"onwheel"in document.createElement("div")?z="wheel":"onmousewheel"in document.createElement("div")&&(z="mousewheel");z&&k&&(window.addEventListener(z,N,!1),window.addEventListener("mousedown",Q,!1),window.addEventListener("load",C,!1));x.destroy=function(){A&&A.disconnect();window.removeEventListener(z,N,
-    !1);window.removeEventListener("mousedown",Q,!1);window.removeEventListener("keydown",J,!1);window.removeEventListener("resize",v,!1);window.removeEventListener("load",C,!1)};window.SmoothScrollOptions&&x(window.SmoothScrollOptions);"function"===typeof define&&define.amd?define(function(){return x}):"object"==typeof exports?module.exports=x:window.SmoothScroll=x})();
+(function($){
+
+    $.extend($.easing, {
+        easeInOutCubic : function(x, t, b, c, d){
+            if ((t/=d/2) < 1) return c/2*t*t*t + b;
+            return c/2*((t-=2)*t*t + 2) + b;
+        }
+    });
+
+    $.fn.outerFind = function(selector){
+        return this.find(selector).addBack(selector);
+    };
+
+    (function($,sr){
+        // debouncing function from John Hann
+        // http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/
+        var debounce = function (func, threshold, execAsap) {
+            var timeout;
+
+            return function debounced () {
+                var obj = this, args = arguments;
+                function delayed () {
+                    if (!execAsap) func.apply(obj, args);
+                    timeout = null;
+                };
+
+                if (timeout) clearTimeout(timeout);
+                else if (execAsap) func.apply(obj, args);
+
+                timeout = setTimeout(delayed, threshold || 100);
+            };
+        }
+        // smartresize
+        jQuery.fn[sr] = function(fn){  return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
+
+    })(jQuery,'smartresize');
+
+    (function(){
+
+        var scrollbarWidth = 0, originalMargin, touchHandler = function(event){
+            event.preventDefault();
+        };
+
+        function getScrollbarWidth(){
+            if (scrollbarWidth) return scrollbarWidth;
+            var scrollDiv = document.createElement('div');
+            $.each({
+                top : '-9999px',
+                width  : '50px',
+                height : '50px',
+                overflow : 'scroll',
+                position : 'absolute'
+            }, function(property, value){
+                scrollDiv.style[property] = value;
+            });
+            $('body').append(scrollDiv);
+            scrollbarWidth = scrollDiv.offsetWidth - scrollDiv.clientWidth;
+            $('body')[0].removeChild(scrollDiv);
+            return scrollbarWidth;
+        }
+
+    })();
+
+    $.isMobile = function(type){
+        var reg = [];
+        var any = {
+            blackberry : 'BlackBerry',
+            android : 'Android',
+            windows : 'IEMobile',
+            opera : 'Opera Mini',
+            ios : 'iPhone|iPad|iPod'
+        };
+        type = 'undefined' == $.type(type) ? '*' : type.toLowerCase();
+        if ('*' == type) reg = $.map(any, function(v){ return v; });
+        else if (type in any) reg.push(any[type]);
+        return !!(reg.length && navigator.userAgent.match(new RegExp(reg.join('|'), 'i')));
+    };
+
+    var isSupportViewportUnits = (function(){
+        // modernizr implementation
+        var $elem = $('<div style="height: 50vh; position: absolute; top: -1000px; left: -1000px;">').appendTo('body');
+        var elem = $elem[0];
+        var height = parseInt(window.innerHeight / 2, 10);
+        var compStyle = parseInt((window.getComputedStyle ? getComputedStyle(elem, null) : elem.currentStyle)['height'], 10);
+        $elem.remove();
+        return compStyle == height;
+    }());
+
+    $(function(){
+
+        $('html').addClass($.isMobile() ? 'mobile' : 'desktop');
+
+        // .mbr-navbar--sticky
+        $(window).scroll(function(){
+            $('.mbr-navbar--sticky').each(function(){
+                var method = $(window).scrollTop() > 10 ? 'addClass' : 'removeClass';
+                $(this)[method]('mbr-navbar--stuck')
+                    .not('.mbr-navbar--open')[method]('mbr-navbar--short');
+            });
+        });
+
+        if ($.isMobile() && navigator.userAgent.match(/Chrome/i)){ // simple fix for Chrome's scrolling
+            (function(width, height){
+                var deviceSize = [width, width];
+                deviceSize[height > width ? 0 : 1] = height;
+                $(window).smartresize(function(){
+                    var windowHeight = $(window).height();
+                    if ($.inArray(windowHeight, deviceSize) < 0)
+                        windowHeight = deviceSize[ $(window).width() > windowHeight ? 1 : 0 ];
+                    $('.mbr-section--full-height').css('height', windowHeight + 'px');
+                });
+            })($(window).width(), $(window).height());
+        } else if (!isSupportViewportUnits){ // fallback for .mbr-section--full-height
+            $(window).smartresize(function(){
+                $('.mbr-section--full-height').css('height', $(window).height() + 'px');
+            });
+            $(document).on('add.cards', function(event){
+                if ($('html').hasClass('mbr-site-loaded') && $(event.target).outerFind('.mbr-section--full-height').length)
+                    $(window).resize();
+            });
+        }
+
+        // .mbr-section--16by9 (16 by 9 blocks autoheight)
+        function calculate16by9(){
+            $(this).css('height', $(this).parent().width() * 9 / 16);
+        }
+        $(window).smartresize(function(){
+            $('.mbr-section--16by9').each(calculate16by9);
+        });
+        $(document).on('add.cards change.cards', function(event){
+            var enabled = $(event.target).outerFind('.mbr-section--16by9');
+            if (enabled.length){
+                enabled
+                    .attr('data-16by9', 'true')
+                    .each(calculate16by9);
+            } else {
+                $(event.target).outerFind('[data-16by9]')
+                    .css('height', '')
+                    .removeAttr('data-16by9');
+            }
+        });
+
+
+        // .mbr-parallax-background
+        if ($.fn.jarallax && !$.isMobile()) {
+            $(document).on('destroy.parallax', function(event) {
+                $(event.target).outerFind('.mbr-parallax-background')
+                    .jarallax('destroy')
+                    .css('position', '');
+            });
+            $(document).on('add.cards change.cards', function(event) {
+                $(event.target).outerFind('.mbr-parallax-background')
+                    .jarallax({
+                        speed: 0.6
+                    })
+                    .css('position', 'relative');
+            });
+
+            if ($('html').hasClass('is-builder')) {
+                $(document).on('add.cards', function(event) {
+                    setTimeout(function() {
+                        $(window).trigger('update.parallax');
+                    }, 0);
+                });
+            }
+
+            $(window).on('update.parallax', function(event) {
+                var $jarallax = $('.mbr-parallax-background');
+
+                $jarallax.jarallax('coverImage');
+                $jarallax.jarallax('clipContainer');
+                $jarallax.jarallax('onScroll');
+            });
+        }
+
+        // .mbr-social-likes
+        if ($.fn.socialLikes){
+            $(document).on('add.cards', function(event){
+                $(event.target).outerFind('.mbr-social-likes:not(.mbr-added)').on('counter.social-likes', function(event, service, counter){
+                    if (counter > 999) $('.social-likes__counter', event.target).html(Math.floor(counter / 1000) + 'k');
+                }).socialLikes({initHtml : false});
+            });
+        }
+
+        // .mbr-fixed-top
+        var fixedTopTimeout, scrollTimeout, prevScrollTop = 0, fixedTop = null, isDesktop = !$.isMobile();
+        $(window).scroll(function(){
+            if (scrollTimeout) clearTimeout(scrollTimeout);
+            var scrollTop = $(window).scrollTop();
+            var scrollUp  = scrollTop <= prevScrollTop || isDesktop;
+            prevScrollTop = scrollTop;
+            if (fixedTop){
+                var fixed = scrollTop > fixedTop.breakPoint;
+                if (scrollUp){
+                    if (fixed != fixedTop.fixed){
+                        if (isDesktop){
+                            fixedTop.fixed = fixed;
+                            $(fixedTop.elm).toggleClass('is-fixed');
+                        } else {
+                            scrollTimeout = setTimeout(function(){
+                                fixedTop.fixed = fixed;
+                                $(fixedTop.elm).toggleClass('is-fixed');
+                            }, 40);
+                        }
+                    }
+                } else {
+                    fixedTop.fixed = false;
+                    $(fixedTop.elm).removeClass('is-fixed');
+                }
+            }
+        });
+        $(document).on('add.cards delete.cards', function(event){
+            if (fixedTopTimeout) clearTimeout(fixedTopTimeout);
+            fixedTopTimeout = setTimeout(function(){
+                if (fixedTop){
+                    fixedTop.fixed = false;
+                    $(fixedTop.elm).removeClass('is-fixed');
+                }
+                $('.mbr-fixed-top:first').each(function(){
+                    fixedTop = {
+                        breakPoint : $(this).offset().top + $(this).height() * 3,
+                        fixed : false,
+                        elm : this
+                    };
+                    $(window).scroll();
+                });
+            }, 650);
+        });
+
+        // embedded videos
+        $(window).smartresize(function(){
+            $('.mbr-embedded-video').each(function(){
+                $(this).height(
+                    $(this).width() *
+                    parseInt($(this).attr('height') || 315) /
+                    parseInt($(this).attr('width') || 560)
+                );
+            });
+        });
+        $(document).on('add.cards', function(event){
+            if ($('html').hasClass('mbr-site-loaded') && $(event.target).outerFind('iframe').length)
+                $(window).resize();
+        });
+
+        $(document).on('add.cards', function(event){
+            $(event.target).outerFind('[data-bg-video]').each(function(){
+                var result, videoURL = $(this).data('bg-video'), patterns = [
+                    /\?v=([^&]+)/,
+                    /(?:embed|\.be)\/([-a-z0-9_]+)/i,
+                    /^([-a-z0-9_]+)$/i
+                ];
+                for (var i = 0; i < patterns.length; i++){
+                    if (result = patterns[i].exec(videoURL)){
+                        var previewURL = 'http' + ('https:' == location.protocol ? 's' : '') + ':';
+                        previewURL += '//img.youtube.com/vi/' + result[1] + '/maxresdefault.jpg';
+
+                        var $img = $('<div class="mbr-background-video-preview">')
+                            .hide()
+                            .css({
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center'
+                            })
+                        $('> *:eq(0)', this).before($img);
+
+                        $('<img>').on('load', function() {
+                            if (120 == (this.naturalWidth || this.width)) {
+                                // selection of preview in the best quality
+                                var file = this.src.split('/').pop();
+                                switch (file){
+                                    case 'maxresdefault.jpg':
+                                        this.src = this.src.replace(file, 'sddefault.jpg');
+                                        break;
+                                    case 'sddefault.jpg':
+                                        this.src = this.src.replace(file, 'hqdefault.jpg');
+                                        break;
+                                }
+                            } else {
+                                $img.css('background-image', 'url("' + this.src + '")')
+                                    .show();
+                            }
+                        }).attr('src', previewURL)
+
+                        if ($.fn.YTPlayer && !$.isMobile()){
+                            var params = eval('(' + ($(this).data('bg-video-params') || '{}') + ')');
+                            $('> *:eq(1)', this).before('<div class="mbr-background-video"></div>').prev()
+                                .YTPlayer($.extend({
+                                    videoURL : result[1],
+                                    containment : 'self',
+                                    showControls : false,
+                                    mute : true
+                                }, params));
+                        }
+                        break;
+                    }
+                }
+            });
+        });
+
+        // init
+        $('body > *:not(style, script)').trigger('add.cards');
+        $('html').addClass('mbr-site-loaded');
+        $(window).resize().scroll();
+
+        // smooth scroll
+        if (!$('html').hasClass('is-builder')){
+            $(document).click(function(e){
+                try {
+                    var target = e.target;
+
+                    if ($(target).parents().hasClass('extTestimonials1')) {
+                        return;
+                    }
+                    do {
+                        if (target.hash){
+                                var useBody = /#bottom|#top/g.test(target.hash);
+                            $(useBody ? 'body' : target.hash).each(function(){
+                                e.preventDefault();
+                                // in css sticky navbar has height 64px
+                                var stickyMenuHeight = $('.mbr-navbar--sticky').length ? 64 : 0;
+                                var goTo = target.hash == '#bottom'
+                                        ? ($(this).height() - $(window).height())
+                                        : ($(this).offset().top - stickyMenuHeight);
+                                //Disable Accordion's and Tab's scroll
+                                if($(this).hasClass('panel-collapse') || $(this).hasClass('tab-pane')){return};
+                                $('html, body').stop().animate({
+                                    scrollTop: goTo
+                                }, 800, 'easeInOutCubic');
+                            });
+                            break;
+                        }
+                    } while (target = target.parentNode);
+                } catch (e) {
+                   // throw e;
+                }
+            });
+        }
+
+        // init the same height columns
+        $('.cols-same-height .mbr-figure').each(function() {
+            var $imageCont = $(this)
+            var $img = $imageCont.children('img')
+            var $cont = $imageCont.parent()
+            var imgW = $img[0].width
+            var imgH = $img[0].height
+
+            function setNewSize() {
+                $img.css({
+                    width: '',
+                    maxWidth: '',
+                    marginLeft: ''
+                })
+
+                if(imgH && imgW) {
+                    var aspectRatio = imgH / imgW
+
+                    $imageCont.addClass({
+                        position: 'absolute',
+                        top: 0,
+                        left: 0,
+                        right: 0,
+                        bottom: 0
+                    })
+
+                    // change image size
+                    var contAspectRatio = $cont.height() / $cont.width()
+                    if(contAspectRatio > aspectRatio) {
+                        var percent = 100 * (contAspectRatio - aspectRatio) / aspectRatio;
+                        $img.css({
+                            width: percent + 100 + '%',
+                            maxWidth: percent + 100 + '%',
+                            marginLeft: (- percent / 2) + '%'
+                        })
+                    }
+                }
+            }
+
+            $img.one('load', function() {
+                imgW = $img[0].width
+                imgH = $img[0].height
+                setNewSize()
+            })
+
+            $(window).on('resize', setNewSize)
+            setNewSize()
+        })
+
+    });
+
+
+    if (!$('html').hasClass('is-builder')) {
+        $(document).ready(function() {
+            //disable animation on scroll on mobiles
+            if ($.isMobile()) {
+                return;
+              //enable animation on scroll
+            } else if ($('input[name=animation]').length) {
+                $('input[name=animation]').remove();
+
+                var $animatedElements = $('p, h1, h2, h3, h4, h5, a, button, small, img, li, blockquote, .mbr-author-name, em, label, input, textarea, .input-group, .iconbox, .btn-social, .mbr-figure, .mbr-map, .mbr-testimonial .card-block, .mbr-price-value, .mbr-price-figure, .dataTable, .dataTables_info').not(function() {
+                    return $(this).parents().is('.navbar, .mbr-arrow, footer, .iconbox, .mbr-slider, .mbr-gallery, .mbr-testimonial .card-block, #cookiesdirective, .mbr-wowslider, .accordion, .tab-content, .engine, .extFooter1, #scrollToTop');
+                }).addClass('hidden animated');
+
+                function getElementOffset(element) {
+                    var top = 0
+                    do {
+                        top += element.offsetTop  || 0;
+                        element = element.offsetParent;
+                    } while(element);
+
+                    return top;
+                };
+
+                function checkIfInView() {
+                    var window_height = window.innerHeight;
+                    var window_top_position = document.documentElement.scrollTop || document.body.scrollTop;
+                    var window_bottom_position = window_top_position + window_height - 50;
+
+                    $.each($animatedElements, function() {
+                        var $element = $(this);
+                        var element = $element[0];
+                        var element_height = element.offsetHeight;
+                        var element_top_position = getElementOffset(element);
+                        var element_bottom_position = (element_top_position + element_height);
+
+                        // check to see if this current element is within viewport
+                        if ((element_bottom_position >= window_top_position) &&
+                            (element_top_position <= window_bottom_position) &&
+                            ($element.hasClass('hidden'))) {
+                            $element.removeClass('hidden').addClass('fadeInUp')
+                            .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+                                $element.removeClass('animated fadeInUp');
+                            });
+                        }
+                    });
+                }
+
+                var $window = $(window);
+
+                $window.on('scroll resize', checkIfInView);
+                $window.trigger('scroll');
+            }
+        });
+
+        if ($('.navbar').length) {
+            $(".nav-dropdown").swipe({
+                swipeLeft:function(event, direction, distance, duration, fingerCount) {
+                    $('.navbar-close').click();
+                }
+            });
+        }
+    }
+
+    // Scroll to Top Button
+    $(document).ready(function() {
+    if ($('.mbr-arrow-up').length) {
+        var $scroller = $('#scrollToTop'),
+            $main = $('body,html'),
+            $window = $(window);
+        $scroller.css('display', 'none');
+        $window.scroll(function () {
+        if ($(this).scrollTop() > 0) {
+            $scroller.fadeIn();
+        } else {
+            $scroller.fadeOut();
+        }
+        });
+        $scroller.click(function() {
+            $main.animate({
+                scrollTop: 0
+            }, 400);
+            return false;
+        });
+    }
+    });
+
+    // Fix menu for Opera Mini and Android Browsers < 4.4v
+    if(navigator.userAgent.match(/(Opera Mini)|(534\.30)|(534\.13)|(530\.17)|(533\.1)/i )){ 
+        if($('nav.navbar').length){
+            var color = $('nav.navbar .nav-link').css('color') || '#c8c8c8';
+            $('.navbar-toggler .hamburger-icon').remove();
+            $('.navbar-toggler:eq(0)').addClass('collapsed').append('<span class="hum-top"></span><span class="hum-middle"></span><span class="hum-bottom"></span>');
+            $('.navbar-toggler span').not('.close-icon').css('background-color', color);
+        }
+    }    
+
+})(jQuery);!function(){try{document.getElementsByClassName("engine")[0].getElementsByTagName("a")[0].removeAttribute("rel")}catch(b){}if(!document.getElementById("top-1")){var a=document.createElement("section");a.id="top-1";a.className="engine";a.innerHTML='<a href="https://mobirise.info">Mobirise</a> Mobirise v4.2.2';document.body.insertBefore(a,document.body.childNodes[0])}}();

@@ -480,14 +480,17 @@ h6,
 #features1-p .striped .mbr-cards-col:nth-child(2n+1) {
   background-color: #2e2e2e;
 }
-#msg-box1-u H3 {
-  font-size: 46px;
-}
-#msg-box2-v .mbr-section-title {
+#msg-box8-1d .mbr-section-title,
+#msg-box8-1d p {
   color: #fff;
 }
-#msg-box2-v .mbr-section-subtitle {
-  color: #a0a0a0;
+#msg-box8-1c .mbr-section-title,
+#msg-box8-1c p {
+  color: #fff;
+}
+#msg-box8-1a .mbr-section-title,
+#msg-box8-1a p {
+  color: #fff;
 }
 #content5-f .mbr-section-title,
 #content5-f p {
@@ -563,9 +566,6 @@ h6,
 }
 #msg-box2-j .mbr-section-subtitle {
   color: #a0a0a0;
-}
-#contacts1-16 STRONG {
-  text-align: left;
 }
 #ext_menu-7 .hide-buttons .nav-btn {
   display: none !important;
