@@ -1610,7 +1610,7 @@
           },
           "title": "Hi, I'm Gonzalo",
           "text": "Here's what I do!<br><br>Please choose an option below<br>",
-          "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-secondary\" href=\"overview.html\" data-toolbar=\"-mbrBtnMove\">CONTINUE TO SITE</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-secondary\" href=\"HTTP://P.STM.PM\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">PHOTO PICK UP</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-black\" href=\"http://github.com/rodro\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">GITHUB</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-black\" href=\"www.linkedin.com/in/grodri\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">LINKEDIN</a>  "
+          "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-secondary\" href=\"overview.html\" data-toolbar=\"-mbrBtnMove\">CONTINUE TO SITE</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-secondary\" href=\"HTTP://P.STM.PM\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">PHOTO PICK UP</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-black\" href=\"http://github.com/rodro\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">MY GITHUB</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-black\" href=\"http://www.linkedin.com/in/grodri\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">MY LINKEDIN</a>  "
         },
         {
           "_inherit": "social-buttons2",
