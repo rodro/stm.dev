@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "STM.pm",
-    "currentPage": "index.html",
+    "currentPage": "media.html",
     "theme": {
       "name": "mobirise3",
       "title": "Mobirise 3",
@@ -235,7 +235,7 @@
               "linkInNewWindow": false
             }
           },
-          "title3": "Web Delopment",
+          "title3": "Web Development",
           "subtitle3": "Google has a highly exhaustive list of fonts",
           "caption3": "Google has a highly exhaustive list of fonts compiled into its web font platform and Mobirise makes it easy for you to use them on your website easily and freely.",
           "button3": "<a data-app-btn=\"true\" href=\"media.html#msg-box8-1a\" class=\"btn btn-primary\" data-toolbar=\"-mbrBtnMove\">MORE</a>",
@@ -301,7 +301,7 @@
             "overlayColor": "#222",
             "overlayOpacity": 0.5
           },
-          "title": "VIZUALIZE YOUR IDEAS",
+          "title": "VISUALIZE YOUR IDEAS",
           "text": "",
           "button": "<a data-app-btn=\"true\" class=\"btn btn-secondary\" href=\"https://mobirise.com\">SEE ALL TEMPLATES</a>",
           "_tags": [
@@ -537,7 +537,7 @@
             "overlayOpacity": 0.5
           },
           "title": "WEBSITE CREATION",
-          "text": "<p>Article header with background image and parallax effect.</p>",
+          "text": "",
           "button": "<a data-app-btn=\"true\" class=\"btn btn-secondary\" href=\"https://mobirise.com\">SEE ALL TEMPLATES</a>",
           "_tags": [
             "Theme"
@@ -628,7 +628,7 @@
             "overlayColor": "#000",
             "overlayOpacity": 0.5
           },
-          "title": "Heres what I do... in a nutshell",
+          "title": "Here's what I do... in a nutshell",
           "caption": ""
         },
         {
@@ -721,7 +721,7 @@
               "color": "#c1c1c1"
             }
           },
-          "title4": "Website Developement",
+          "title4": "Website Development",
           "subtitle4": "Mobirise gives you the freedom to develop",
           "caption4": "You have to make your websites with love these days!",
           "button4": "<a data-app-btn=\"true\" href=\"media.html#msg-box8-1a\" class=\"btn btn-primary\" data-toolbar=\"-mbrBtnMove\">MORE</a>",
@@ -788,7 +788,7 @@
           },
           "button": "<a data-app-btn=\"true\" class=\"btn btn-primary\" href=\"photography.html\" data-toolbar=\"-mbrBtnMove\">MORE DETAILS</a>",
           "text": "",
-          "title": "PASSOIN WORTH CAPTURING"
+          "title": "PASSION WORTH CAPTURING"
         },
         {
           "_inherit": "menu",
@@ -1229,9 +1229,9 @@
             "overlayColor": "#000",
             "overlayOpacity": 0.5
           },
-          "title": "FULL SCREEN INTRO",
-          "text": "Click any text to edit or style it. Click blue \"Gear\" icon in the top right corner to hide/show buttons, text, title and change the block background. <br> Click red \"+\" in the bottom right corner to add a new block. Use the top left menu to create new pages, sites and add extensions.",
-          "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"https://mobirise.com\" data-toolbar=\"-mbrBtnMove\">SAMPLES</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"P.STM.PM\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">PHOTO PICKUP</a>"
+          "title": "SEIZING THE MOMENTS",
+          "text": "",
+          "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"photography.html#gallery4-y\" data-toolbar=\"-mbrBtnMove\">SAMPLES</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"P.STM.PM\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">PHOTO PICKUP</a>"
         },
         {
           "_inherit": "gallery1",
