@@ -23,8 +23,8 @@
       "additionalSetColors": []
     },
     "versionFirst": "3.12.1",
-    "uniqCompNum": 57,
-    "versionPublish": "4.2.2",
+    "uniqCompNum": 58,
+    "versionPublish": "4.3.0",
     "favicon": "@PROJECT_PATH@/assets/images/favicon-128x128.png",
     "noImageResize": ""
   },
@@ -204,7 +204,7 @@
             }
           },
           "title1": "Graphic Design",
-          "subtitle1": "Bootstrap 4 has been noted",
+          "subtitle1": "",
           "caption1": "Bootstrap 4 has been noted as one of the most reliable and proven frameworks and Mobirise has been equipped to develop websites using this framework.",
           "button1": "<a data-app-btn=\"true\" href=\"media.html#msg-box8-1d\" class=\"btn btn-primary\" data-toolbar=\"-mbrBtnMove\">MORE</a>",
           "media2": {
@@ -220,7 +220,7 @@
             }
           },
           "title2": "Video",
-          "subtitle2": "One of Bootstrap 4's big points",
+          "subtitle2": "",
           "caption2": "One of Bootstrap 4's big points is responsiveness and Mobirise makes effective use of this by generating highly responsive website for you.",
           "button2": "<a data-app-btn=\"true\" href=\"media.html#msg-box8-1c\" class=\"btn btn-primary\" data-toolbar=\"-mbrBtnMove\">MORE</a>",
           "media3": {
@@ -236,7 +236,7 @@
             }
           },
           "title3": "Web Development",
-          "subtitle3": "Google has a highly exhaustive list of fonts",
+          "subtitle3": "",
           "caption3": "Google has a highly exhaustive list of fonts compiled into its web font platform and Mobirise makes it easy for you to use them on your website easily and freely.",
           "button3": "<a data-app-btn=\"true\" href=\"media.html#msg-box8-1a\" class=\"btn btn-primary\" data-toolbar=\"-mbrBtnMove\">MORE</a>",
           "media4": {
@@ -1217,7 +1217,7 @@
             "showArrow": true,
             "contentAlign": "center",
             "bgImageRadio": true,
-            "bgImage": "@THEME_PATH@/components/_images/jumbotron.jpg",
+            "bgImage": "@PROJECT_PATH@/assets/images/dsc02680-2000x1082.jpg",
             "parallax": true,
             "bgColorRadio": false,
             "bgColor": "#a07e49",
@@ -1251,83 +1251,167 @@
             "filter": true,
             "images": [
               {
-                "tags": "Awesome",
+                "tags": "WEDDINGS",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "@THEME_PATH@/components/_images/gallery/bike-small.jpg",
-                "image": "@THEME_PATH@/components/_images/gallery/bike.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/01-1600x1067-800x533.jpg",
+                "image": "@PROJECT_PATH@/assets/images/01-1600x1067.jpg",
                 "caption": "Type caption here",
+                "alt": "",
+                "active": false
+              },
+              {
+                "tags": "CONCERTS",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/02-1600x1067-800x533.jpg",
+                "image": "@PROJECT_PATH@/assets/images/02-1600x1067.jpg",
+                "caption": "Type caption here",
+                "alt": "",
+                "active": false
+              },
+              {
+                "tags": "EVENTS",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/03-1600x1067-800x533.jpg",
+                "image": "@PROJECT_PATH@/assets/images/03-1600x1067.jpg",
+                "caption": "Type caption here",
+                "alt": "",
+                "active": false
+              },
+              {
+                "tags": "WEDDINGS",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/04-1600x1067-800x533.jpg",
+                "image": "@PROJECT_PATH@/assets/images/04-1600x1067.jpg",
+                "caption": "Type caption here",
+                "alt": "",
+                "active": false
+              },
+              {
+                "tags": "EVENTS",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/05-1600x1067-800x533.jpg",
+                "image": "@PROJECT_PATH@/assets/images/05-1600x1067.jpg",
+                "caption": "Type caption here",
+                "alt": "",
+                "active": false
+              },
+              {
+                "tags": "CLIENT",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/06-1600x1067-800x533.jpg",
+                "image": "@PROJECT_PATH@/assets/images/06-1600x1067.jpg",
+                "caption": "Type caption here",
+                "alt": "",
+                "active": false
+              },
+              {
+                "tags": "WEDDINGS",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/07-1600x1067-800x533.jpg",
+                "image": "@PROJECT_PATH@/assets/images/07-1600x1067.jpg",
+                "caption": "Type caption here",
+                "alt": "",
+                "active": false
+              },
+              {
+                "tags": "WEDDINGS",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/08-1600x1067-800x533.jpg",
+                "image": "@PROJECT_PATH@/assets/images/08-1600x1067.jpg",
+                "caption": "Type caption here",
+                "alt": "",
+                "active": false
+              },
+              {
+                "tags": "FAMILY",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/09-1600x1067-800x533.jpg",
+                "image": "@PROJECT_PATH@/assets/images/09-1600x1067.jpg",
+                "caption": "Type caption here",
+                "alt": "",
+                "active": false
+              },
+              {
+                "tags": "FAMILY",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/10-1600x1067-800x533.jpg",
+                "image": "@PROJECT_PATH@/assets/images/10-1600x1067.jpg",
+                "caption": "Type caption here",
+                "alt": "",
+                "active": false
+              },
+              {
+                "tags": "WEDDINGS",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/11-1600x1067-800x533.jpg",
+                "image": "@PROJECT_PATH@/assets/images/11-1600x1067.jpg",
+                "caption": "Type caption here",
+                "alt": "",
+                "active": false
+              },
+              {
+                "tags": "FAMILY",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/12-1600x1067-800x533.jpg",
+                "image": "@PROJECT_PATH@/assets/images/12-1600x1067.jpg",
+                "caption": "Type caption here",
+                "alt": "",
                 "active": true
-              },
-              {
-                "tags": "Responsive",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "@THEME_PATH@/components/_images/gallery/code-man-small.jpg",
-                "image": "@THEME_PATH@/components/_images/gallery/code-man.jpg",
-                "caption": "Type caption here"
-              },
-              {
-                "tags": "Creative",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "@THEME_PATH@/components/_images/gallery/coworkers-small.jpg",
-                "image": "@THEME_PATH@/components/_images/gallery/coworkers.jpg",
-                "caption": "Type caption here"
-              },
-              {
-                "tags": "Animated",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "@THEME_PATH@/components/_images/gallery/desktop-small.jpg",
-                "image": "@THEME_PATH@/components/_images/gallery/desktop.jpg",
-                "caption": "Type caption here"
-              },
-              {
-                "tags": "Awesome",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "@THEME_PATH@/components/_images/gallery/room-laptop-small.jpg",
-                "image": "@THEME_PATH@/components/_images/gallery/room-laptop.jpg",
-                "caption": "Type caption here"
-              },
-              {
-                "tags": "Beautiful",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "@THEME_PATH@/components/_images/gallery/table-small.jpg",
-                "image": "@THEME_PATH@/components/_images/gallery/table.jpg",
-                "caption": "Type caption here"
-              },
-              {
-                "tags": "Responsive",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "@THEME_PATH@/components/_images/gallery/windows-books-small.jpg",
-                "image": "@THEME_PATH@/components/_images/gallery/windows-books.jpg",
-                "caption": "Type caption here"
-              },
-              {
-                "tags": "Animated",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "@THEME_PATH@/components/_images/gallery/working-area-small.jpg",
-                "image": "@THEME_PATH@/components/_images/gallery/working-area.jpg",
-                "caption": "Type caption here"
               }
             ]
           },
           "_anchor": "gallery4-y",
           "articleLayout": false,
           "allItem": "All"
+        },
+        {
+          "_params": {
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "bgImageRadio": false,
+            "bgImage": "@THEME_PATH@/components/_images/jumbotron.jpg",
+            "parallax": true,
+            "bgColorRadio": true,
+            "bgColor": "#fff",
+            "overlay": false,
+            "overlayColor": "#222",
+            "overlayOpacity": 0.5,
+            "facebook": true,
+            "twitter": true,
+            "google": true,
+            "vkontakte": false,
+            "odnoklassniki": false
+          },
+          "text": "SHARE THIS PAGE!",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "social-buttons1",
+          "_anchor": "social-buttons1-1l"
         },
         {
           "_params": {
