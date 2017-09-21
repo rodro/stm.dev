@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "STM.pm",
-    "currentPage": "media.html",
+    "currentPage": "overview.html",
     "theme": {
       "name": "mobirise3",
       "title": "Mobirise 3",
@@ -205,7 +205,7 @@
           },
           "title1": "Graphic Design",
           "subtitle1": "",
-          "caption1": "Bootstrap 4 has been noted as one of the most reliable and proven frameworks and Mobirise has been equipped to develop websites using this framework.",
+          "caption1": "I use many techniques to create and blend words, symbols, and images to form a visual representation that conveys that certain idea or message",
           "button1": "<a data-app-btn=\"true\" href=\"media.html#msg-box8-1d\" class=\"btn btn-primary\" data-toolbar=\"-mbrBtnMove\">MORE</a>",
           "media2": {
             "image": {
@@ -221,7 +221,7 @@
           },
           "title2": "Video",
           "subtitle2": "",
-          "caption2": "One of Bootstrap 4's big points is responsiveness and Mobirise makes effective use of this by generating highly responsive website for you.",
+          "caption2": "From interviews, sporting events, video advertizing, and social media live broadcasting on both Facebook and instagram, I can do it all.<br>",
           "button2": "<a data-app-btn=\"true\" href=\"media.html#msg-box8-1c\" class=\"btn btn-primary\" data-toolbar=\"-mbrBtnMove\">MORE</a>",
           "media3": {
             "image": {
@@ -237,7 +237,7 @@
           },
           "title3": "Web Development",
           "subtitle3": "",
-          "caption3": "Google has a highly exhaustive list of fonts compiled into its web font platform and Mobirise makes it easy for you to use them on your website easily and freely.",
+          "caption3": "I love taking your ideas and turning them in to a unique visual experience that is both intuitive and mobile friendly.<br>Let make great code work for you.",
           "button3": "<a data-app-btn=\"true\" href=\"media.html#msg-box8-1a\" class=\"btn btn-primary\" data-toolbar=\"-mbrBtnMove\">MORE</a>",
           "media4": {
             "image": {
@@ -328,81 +328,88 @@
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
-                "image": "@THEME_PATH@/components/_images/gallery/bike.jpg",
-                "thumb": "@THEME_PATH@/components/_images/gallery/bike-small.jpg",
+                "image": "@PROJECT_PATH@/assets/images/06-1600x1067-800x533.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/06-1600x1067-800x533-800x533.jpg",
                 "alt": "",
                 "caption": "Type caption here",
-                "active": true
+                "active": false
               },
               {
                 "tags": "Responsive",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
-                "image": "@THEME_PATH@/components/_images/gallery/code-man.jpg",
-                "thumb": "@THEME_PATH@/components/_images/gallery/code-man-small.jpg",
+                "image": "@PROJECT_PATH@/assets/images/mlk2-2000x1333-800x533.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/mlk2-2000x1333-800x533-800x533.jpg",
                 "alt": "",
-                "caption": "Type caption here"
+                "caption": "Type caption here",
+                "active": false
               },
               {
                 "tags": "Creative",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
-                "image": "@THEME_PATH@/components/_images/gallery/coworkers.jpg",
-                "thumb": "@THEME_PATH@/components/_images/gallery/coworkers-small.jpg",
+                "image": "@PROJECT_PATH@/assets/images/d1-2000x1333.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/d1-2000x1333-800x533.jpg",
                 "alt": "",
-                "caption": "Type caption here"
+                "caption": "Type caption here",
+                "active": false
               },
               {
                 "tags": "Animated",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
-                "image": "@THEME_PATH@/components/_images/gallery/desktop.jpg",
-                "thumb": "@THEME_PATH@/components/_images/gallery/desktop-small.jpg",
+                "image": "@PROJECT_PATH@/assets/images/124-2000x1333-800x533.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/124-2000x1333-800x533-800x533.jpg",
                 "alt": "",
-                "caption": "Type caption here"
+                "caption": "Type caption here",
+                "active": false
               },
               {
                 "tags": "Awesome",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
-                "image": "@THEME_PATH@/components/_images/gallery/room-laptop.jpg",
-                "thumb": "@THEME_PATH@/components/_images/gallery/room-laptop-small.jpg",
+                "image": "@PROJECT_PATH@/assets/images/sto-2000x1333.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/sto-2000x1333-800x533.jpg",
                 "alt": "",
-                "caption": "Type caption here"
+                "caption": "Type caption here",
+                "active": false
               },
               {
                 "tags": "Beautiful",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
-                "image": "@THEME_PATH@/components/_images/gallery/table.jpg",
-                "thumb": "@THEME_PATH@/components/_images/gallery/table-small.jpg",
+                "image": "@PROJECT_PATH@/assets/images/mld4-2000x1333.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/mld4-2000x1333-800x533.jpg",
                 "alt": "",
-                "caption": "Type caption here"
+                "caption": "Type caption here",
+                "active": false
               },
               {
                 "tags": "Responsive",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
-                "image": "@THEME_PATH@/components/_images/gallery/windows-books.jpg",
-                "thumb": "@THEME_PATH@/components/_images/gallery/windows-books-small.jpg",
+                "image": "@PROJECT_PATH@/assets/images/likeminds-2000x1333-800x533.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/likeminds-2000x1333-800x533-800x533.jpg",
                 "alt": "",
-                "caption": "Type caption here"
+                "caption": "Type caption here",
+                "active": false
               },
               {
                 "tags": "Animated",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
-                "image": "@THEME_PATH@/components/_images/gallery/working-area.jpg",
-                "thumb": "@THEME_PATH@/components/_images/gallery/working-area-small.jpg",
+                "image": "@PROJECT_PATH@/assets/images/krcard-2000x1333.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/krcard-2000x1333-800x533.jpg",
                 "alt": "",
-                "caption": "Type caption here"
+                "caption": "Type caption here",
+                "active": true
               }
             ]
           },
@@ -468,42 +475,42 @@
               {
                 "tags": "Awesome",
                 "playVideo": true,
-                "videoUrl": "https://www.youtube.com/watch?v=07CFwKk5_nE&feature=em-upload_owner",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/logo.jpg",
+                "videoUrl": "https://www.youtube.com/watch?v=ciKJ7TBKlWw",
+                "videoPreview": "@PROJECT_PATH@/assets/images/2017-8-4-0-27-54-198178.jpg",
                 "thumb": "@THEME_PATH@/components/_images/gallery/bike-small.jpg",
                 "image": "@THEME_PATH@/components/_images/gallery/bike.jpg",
-                "caption": "Type caption here",
-                "active": true
-              },
-              {
-                "tags": "Responsive",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "@THEME_PATH@/components/_images/gallery/code-man-small.jpg",
-                "image": "@THEME_PATH@/components/_images/gallery/code-man.jpg",
-                "caption": "Type caption here",
+                "caption": "ONESA Bond",
                 "active": false
               },
               {
                 "tags": "Responsive",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": true,
+                "videoUrl": "https://www.youtube.com/watch?v=07CFwKk5_nE&t=6s",
+                "videoPreview": "@PROJECT_PATH@/assets/images/2017-8-4-0-26-36-71240.jpg",
+                "thumb": "@THEME_PATH@/components/_images/gallery/code-man-small.jpg",
+                "image": "@THEME_PATH@/components/_images/gallery/code-man.jpg",
+                "caption": "Delmer for D10",
+                "active": false
+              },
+              {
+                "tags": "Responsive",
+                "playVideo": true,
+                "videoUrl": "https://www.youtube.com/watch?v=S6__mleQeqc",
+                "videoPreview": "@PROJECT_PATH@/assets/images/2017-8-4-0-29-28-426666.jpg",
                 "thumb": "@THEME_PATH@/components/_images/gallery/windows-books-small.jpg",
                 "image": "@THEME_PATH@/components/_images/gallery/windows-books.jpg",
-                "caption": "Type caption here",
+                "caption": "Cabello 4 D6",
                 "active": false
               },
               {
                 "tags": "Awesome",
                 "playVideo": true,
-                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "videoUrl": "https://www.youtube.com/watch?v=2GB8j5Pjjos",
+                "videoPreview": "@PROJECT_PATH@/assets/images/2017-8-4-0-35-43-879614.jpg",
                 "thumb": "@THEME_PATH@/components/_images/gallery/bike-small.jpg",
                 "image": "@THEME_PATH@/components/_images/gallery/bike.jpg",
-                "caption": "Type caption here",
-                "active": false
+                "caption": "Bachata Workshop",
+                "active": true
               }
             ]
           },
@@ -567,18 +574,40 @@
                 "thumb": "@PROJECT_PATH@/assets/images/warrick2-2000x1333-800x533.jpg",
                 "alt": "warrick",
                 "caption": "Type caption here",
-                "active": true
+                "active": false
               },
               {
                 "tags": "Animated",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
-                "image": "@THEME_PATH@/components/_images/gallery/desktop.jpg",
-                "thumb": "@THEME_PATH@/components/_images/gallery/desktop-small.jpg",
+                "image": "@PROJECT_PATH@/assets/images/ironlist-2000x1333.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/ironlist-2000x1333-800x533.jpg",
                 "alt": "",
                 "caption": "Type caption here",
                 "active": false
+              },
+              {
+                "tags": "Animated",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "image": "@PROJECT_PATH@/assets/images/r2labs-2000x1333.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/r2labs-2000x1333-800x533.jpg",
+                "alt": "",
+                "caption": "Type caption here",
+                "active": false
+              },
+              {
+                "tags": "Animated",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "image": "@PROJECT_PATH@/assets/images/likeminds-2000x1333.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/likeminds-2000x1333-800x533.jpg",
+                "alt": "",
+                "caption": "Type caption here",
+                "active": true
               }
             ]
           },
@@ -616,7 +645,7 @@
             "paddingTop": 3,
             "paddingBottom": 3,
             "bgImageRadio": true,
-            "bgImage": "@THEME_PATH@/components/_images/desert2.jpg",
+            "bgImage": "@PROJECT_PATH@/assets/images/header-2000x1333.jpg",
             "parallax": true,
             "bgColorRadio": false,
             "bgColor": "#fff",
@@ -994,11 +1023,11 @@
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
-                "image": "@THEME_PATH@/components/_images/gallery/bike.jpg",
-                "thumb": "@THEME_PATH@/components/_images/gallery/bike-small.jpg",
+                "image": "@PROJECT_PATH@/assets/images/d1-2000x1333.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/d1-2000x1333-800x533.jpg",
                 "alt": "",
                 "caption": "Type caption here",
-                "active": false
+                "active": true
               },
               {
                 "tags": "Responsive",
@@ -1009,7 +1038,7 @@
                 "thumb": "@PROJECT_PATH@/assets/images/mlk2-2000x1333-800x533.jpg",
                 "alt": "mlk",
                 "caption": "Type caption here",
-                "active": true
+                "active": false
               },
               {
                 "tags": "Creative",
@@ -1019,6 +1048,17 @@
                 "image": "@PROJECT_PATH@/assets/images/seraphim-2000x1333.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/seraphim-2000x1333-800x533.jpg",
                 "alt": "seraphim",
+                "caption": "Type caption here",
+                "active": false
+              },
+              {
+                "tags": "Awesome",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "image": "@PROJECT_PATH@/assets/images/mld4-2000x1333.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/mld4-2000x1333-800x533.jpg",
+                "alt": "",
                 "caption": "Type caption here",
                 "active": false
               }
@@ -1086,7 +1126,7 @@
               "active": true
             }
           },
-          "text": "Create awesome mobile-friendly websites. No coding and free."
+          "text": "Binding videos and ideas to tell your story"
         },
         {
           "_tags": [
