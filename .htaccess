@@ -4,5 +4,10 @@ RewriteCond %{REQUEST_FILENAME} !-f
 
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
-RewriteRule ^vcard$ VCard.html [NC]
 
+
+<Files ~ "^\.(htaccess|htpasswd)$">
+deny from all
+</Files>
+ErrorDocument 404 404.html
+order deny,allow
