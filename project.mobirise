@@ -1875,28 +1875,6 @@
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/08-1600x1067-800x533.jpg",
-                "image": "@PROJECT_PATH@/assets/images/08-1600x1067.jpg",
-                "caption": "Type caption here",
-                "alt": "",
-                "active": true
-              },
-              {
-                "tags": "WEDDINGS",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/09-1600x1067-800x533.jpg",
-                "image": "@PROJECT_PATH@/assets/images/09-1600x1067.jpg",
-                "caption": "Type caption here",
-                "alt": "",
-                "active": false
-              },
-              {
-                "tags": "FAMILY",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/10-1600x1067-800x533.jpg",
                 "image": "@PROJECT_PATH@/assets/images/10-1600x1067.jpg",
                 "caption": "Type caption here",
@@ -1924,6 +1902,28 @@
                 "caption": "Type caption here",
                 "alt": "",
                 "active": false
+              },
+              {
+                "tags": "FAMILY",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/screen-shot-2017-09-19-at-12.50.24-am-1590x1002-800x504.png",
+                "image": "@PROJECT_PATH@/assets/images/screen-shot-2017-09-19-at-12.50.24-am-1590x1002.png",
+                "caption": "Type caption here",
+                "alt": "",
+                "active": false
+              },
+              {
+                "tags": "WEDDINGS",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=uNCr7NdOJgw",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/download-1-1600x1067-800x533-800x533.jpg",
+                "image": "@PROJECT_PATH@/assets/images/download-1-1600x1067-800x533.jpg",
+                "caption": "Type caption here",
+                "alt": "",
+                "active": true
               }
             ]
           },
