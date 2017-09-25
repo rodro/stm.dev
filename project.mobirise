@@ -849,7 +849,7 @@
             "overlayColor": "#222",
             "overlayOpacity": 0.5
           },
-          "button": "<a data-app-btn=\"true\" class=\"btn btn-primary\" href=\"photography.html\" data-toolbar=\"-mbrBtnMove\">MORE EXAMPLES</a>",
+          "button": "<a data-app-btn=\"true\" class=\"btn btn-primary\" href=\"photo.html\" data-toolbar=\"-mbrBtnMove\">MORE EXAMPLES</a>",
           "text": "",
           "title": "PASSION WORTH CAPTURING"
         },
